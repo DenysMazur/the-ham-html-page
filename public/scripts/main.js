@@ -258,6 +258,8 @@ $(document).ready(function () {
     percentPosition: true
   });
 
+  $grid.masonry('reloadItems');
+
   $('.button_adding-masonry-item').on('click', function (event) {
     let counter = event.currentTarget.dataset.click;
     counter++;
