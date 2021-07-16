@@ -250,15 +250,15 @@ $('.slider-navigation').slick({
 
 
 $(document).ready(function () {
-  
-  const $grid = $('.masonry-container').masonry({
-    itemSelector: '.masonry-item',
-    columnWidth: 10,
-    gutter: 10,
-    percentPosition: true
+  var $grid = $('.masonry-container').imagesLoaded( function() {
+    
+    $grid.masonry({
+      itemSelector: '.masonry-item',
+      columnWidth: 10,
+      gutter: 10,
+      percentPosition: true
+    });
   });
-
-  $grid.masonry('reloadItems');
 
   $('.button_adding-masonry-item').on('click', function (event) {
     let counter = event.currentTarget.dataset.click;
