@@ -1,4 +1,4 @@
-https://just_infinity.gitlab.io/the-ham-step-project/
+ Gitlab pages: https://just_infinity.gitlab.io/the-ham-step-project/
 
 ## Задание
 
